@@ -31,3 +31,23 @@ nav a {
   display: block;
   padding:10px 0;
 }
+
+nav input[type=search] {
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  padding-left: 0;
+  margin: 0;
+  margin-left: -6px;
+  width: 100%;
+  font-size: 40px;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #eee;
+} nav input[type=search]:focus {
+  outline: 0;
+}
+
+nav a[href="#1xx"] {
+  margin-top: 5em;
+}
