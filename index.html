@@ -7,9 +7,16 @@
 <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <article class="accordion">
-    <section id="tab-one">
-      <h1><a href="#tab-one">1xx Information</a></h1>
+  <article>
+    <nav>
+      <a href="#1xx">1xx Informational</a>
+      <a href="#2xx">2xx Success</a>
+      <a href="#3xx">3xx Redirection</a>      
+      <a href="#4xx">4xx Client Error</a>    
+      <a href="#5xx">5xx Server Error</a>    
+    </nav>
+    <section id="1xx">
+      <h1>1xx Information</h1>
       <p>Request received, continuing process.
       This class of status code indicates a provisional response, consisting only of the Status-Line and optional headers, and is terminated by an empty line. Since HTTP/1.0 did not define any 1xx status codes, servers must not send a 1xx response to an HTTP/1.0 client except under experimental conditions.</p>
       <dl>
@@ -24,8 +31,8 @@
       </dl>
     </section>
 
-    <section id="tab-two">
-      <h1><a href="#tab-two">2xx Success</a></h1>
+    <section id="2xx">
+      <h1>2xx Success</h1>
       <p>This class of status codes indicates the action requested by the client was received, understood, accepted and processed successfully.</p>
       <dl>
         <dt>200 OK</dt>
@@ -60,8 +67,8 @@
       </dl>
     </section>
   
-    <section id="tab-three">
-      <h1><a href="#tab-three">3xx Redirection</a></h1>
+    <section id="3xx">
+      <h1>3xx Redirection</h1>
       <p>The client must take additional action to complete the request.
       This class of status code indicates that further action needs to be taken by the user agent to fulfill the request. The action required may be carried out by the user agent without interaction with the user if and only if the method used in the second request is GET or HEAD. A user agent should not automatically redirect a request more than five times, since such redirections usually indicate an infinite loop.</p>
       <dl>
@@ -94,8 +101,8 @@
       </dl>
     </section>
   
-    <section id="tab-four">
-      <h1><a href="#tab-four">4xx Client Error</a></h1>
+    <section id="4xx">
+      <h1>4xx Client Error</h1>
       <p>The 4xx class of status code is intended for cases in which the client seems to have erred. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and whether it is a temporary or permanent condition. These status codes are applicable to any request method. User agents should display any included entity to the user.</p>
       <dl>
         <dt>400 Bad Request</dt>
@@ -225,8 +232,8 @@
       </dl>
     </section>
   
-    <section id="tab-five">
-      <h1><a href="#tab-five">5xx Server Error</a></h1>
+    <section id="5xx">
+      <h1>5xx Server Error</h1>
       <p>The server failed to fulfill an apparently valid request.
       Response status codes beginning with the digit "5" indicate cases in which the server is aware that it has encountered an error or is otherwise incapable of performing the request. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and indicate whether it is a temporary or permanent condition. Likewise, user agents should display any included entity to the user. These response codes are applicable to any request method.</p>
       <dl>
