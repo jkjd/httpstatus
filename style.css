@@ -17,6 +17,15 @@ h1 {
   font-weight: bold;
 }
 
+dt {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
 nav a {
   font-size: 20px;
   display: block;
