@@ -1,0 +1,42 @@
+/*Colors used: 
+CECECE
+6A6A6A
+8D8D8D
+*/
+
+html{
+  background-color: #CECECE;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+article.accordion {
+  overflow: hidden;
+} 
+
+article.accordion section {
+  height: 45px;
+  overflow: hidden;
+}
+
+article.accordion section h1 {
+  cursor: pointer;
+  background-color: #6A6A6A;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+} article.accordion section h1:hover {
+  background-color: #8D8D8D;
+} 
+
+article.accordion section dt {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+article.accordion section:target {
+  height: 100%;
+} 
