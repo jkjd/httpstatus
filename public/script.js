@@ -9,11 +9,10 @@ searchField.keyup(function() {
 });
 
 function jumpToSection(statusCode) {
-  var section = $('#'+statusCode),
-      searchBarHeight = -100;
-  if(section.length) {    
-    $('html, body').animate({
-      scrollTop: section.offset().top+searchBarHeight
+  var section = $('#'+statusCode);
+  if(section.length) { 
+    $('article').animate({
+      scrollTop: section.offset().top
     }, 0);
   }
 }
