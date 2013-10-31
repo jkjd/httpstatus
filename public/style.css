@@ -17,6 +17,7 @@ a:hover {
 }
 
 h1 {
+  background: black;
   font-size: 25px;
   font-weight: bold;
 }
